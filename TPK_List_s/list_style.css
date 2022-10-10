@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+    gap:30px;
+}
+
+:root{
+    --black:#333;
+    --white:#fff;
+}
+
+.list_ol {
+    counter-reset:item;
+    padding-left: 10px;
+}
+.list_ol > li {
+    display: block
+}
+.list_ol > li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item
+}
+

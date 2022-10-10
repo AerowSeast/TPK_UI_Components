@@ -1,0 +1,104 @@
+/* 全域設置 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* 顏色管理 */
+:root{
+    --background:#353535;
+    --black:rgba(59,69,78,1.00);
+    --orange:#f57648;
+    --gray:rgba(136,153,168,1.00);
+    --s_gray:rgba(92,105,117,1.00);
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+.file_container{
+    width:500px;
+    max-width:500px;
+    display:flex;
+    align-items:center;
+    max-width:100%;
+    overflow: hidden;
+    border:1px solid rgba(227,232,237,1);
+    cursor:pointer;
+    padding:.8rem 1.2rem;
+    transition: all .1s;
+    transition-duration:0.25s;
+    transform: translateY(0);
+    text-overflow: ellipsis;
+    white-space:unset;
+    gap:15px;
+    border-radius:10px;
+}
+
+.file_container:hover{
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.container:hover{
+    transform: translateY(-2px);
+    box-shadow:2px 2.2px 15px rgba(0,0,0,0.05);
+}
+
+.container:hover .a_title{
+    color:var(--orange);
+}
+
+/* icon setting */
+.file_icon{
+    transform:rotate(45deg);
+    font-size:2.2rem;
+    background-color:var(--background);
+    border-radius:50%;
+    padding:.3rem;
+    color:white;
+}
+
+.file_row{
+    display:flex;
+    gap:1.2rem;
+    align-items:center;
+}
+
+.file_title{
+    position:relative;
+    font-weight:500;
+    font-size:1.2rem;
+}
+
+.title::before{
+    content:"";
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height:3px;
+}
+
+.a_title{
+    text-decoration: none;
+    color:var(--black);
+    transition:all .3s;
+}
+
+.capacity{
+    color:var(--gray);
+}
+
+.s_title{
+    color:var(--s_gray);
+}
+
+.p_item{
+    color:var(--gray);
+}
+

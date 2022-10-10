@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --border_shadow_gray:#8d99ae;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.Paragraph{
+    max-width:600px;
+    width:600px;
+    border:1px solid var(--border_shadow_gray);
+    padding:15px;
+    box-shadow:0px 0px 15px var(--border_shadow_gray);
+}
+
